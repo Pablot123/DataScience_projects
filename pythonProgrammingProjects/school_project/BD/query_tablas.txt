@@ -1,0 +1,46 @@
+CREATE DATABASE escuela;
+SHOW DATABASES;
+USE escuela;
+
+CREATE TABLE Estudiante (
+	CODIGO INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    ID INT(20),
+	NOMBRE CHAR(50),
+	GRADE INT(15),
+	NOTAS CHAR(100)
+);
+
+INSERT INTO Estudiante 
+	(CODIGO, ID, NOMBRE, GRADE, NOTAS) VALUES
+		(001, 123, 'Monika', 10, ''),
+		(002, 456, 'Niharika', 8, ''),
+		(003, 789, 'Vishal', 3, ''),
+		(004, 101, 'Amitabh', 5, '');
+
+CREATE TABLE Profesor (
+	CODIGO INT PRIMARY KEY AUTO_INCREMENT,
+	ID INT(10),
+	NOMBRE CHAR(50),
+    GRADE INT(10),
+    MATERIA CHAR(20),
+    SALARIO INT(30)
+);
+
+INSERT INTO Profesor 
+	(CODIGO, ID, NOMBRE, GRADE, MATERIA, SALARIO) VALUES
+		(101, 454, 'Pablo Tamayo', 11, 'Matematica',2000000),
+		(102, 334,'Andres Ochoa', 3, 'Biologia', 15000000),
+		(103, 898, 'Cristina Aguilera', 5, 'Musica', 20000000);
+CREATE TABLE Materia (
+	CODIGO INT PRIMARY KEY AUTO_INCREMENT,
+	NOMBRE CHAR(25)
+);
+
+INSERT INTO Materia
+	(CODIGO, NOMBRE) VALUES
+ (201, 'Biologia'),
+ (202, 'Matematicas'),
+ (208, 'Sociales'),
+ (205, 'Musica'),
+ (204, 'Quimica'),
+ (207, 'Fisica');
