@@ -6,4 +6,4 @@ Contain a notebbok with an analisis of the data, statistics analisis and impleme
 ## imdb
 On this project I implement a connection with BigQuery (Google cloud service), using a SQL query to join tabels and take the data, make some data cleaning and analisis and ending with a ML project implementint a NLP to predict the polarity(positive or negative) of a given review
 ## PneumoniaClassifier
-On this project I train a model to classify images of lungs RX as Normal lungs, covid pneumonia and viral pneumonia. I implement a CNN to develop the project  
+On this project I built a model to classify images of lungs RX as Normal lungs, covid pneumonia and viral pneumonia using convolutional neural network to develop the project  
